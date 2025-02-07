@@ -12,8 +12,7 @@ public class Planta {
         this.duracaoVida = duracaoVida;
         this.precisaSol = precisaSol;
     }
-
-    // Getters e Setters
+   
     public String getNome() {
         return nome;
     }
@@ -54,13 +53,8 @@ public class Planta {
         this.precisaSol = precisaSol;
     }
 
-    // Método polimórfico
     public String tipoPlanta() {
         return "Planta";
     }
-
-    public String exibirDetalhes() {
-        return tipoPlanta() + " - Cor: " + cor + ", Regar " + vezesRegar + " vezes na semana, Precisa de sol: " 
-                + (precisaSol ? "Sim" : "Não") + ", Tempo de vida: " + duracaoVida + " anos.";
-    }
+        
 }
